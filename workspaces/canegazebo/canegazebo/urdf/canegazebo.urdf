@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="canegazebo">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 -0.0067681802391108 0.00156194036617685"
+        rpy="0 0 0" />
+      <mass
+        value="0.545661708304909" />
+      <inertia
+        ixx="0.0200472692924164"
+        ixy="8.64125255253708E-20"
+        ixz="-4.11308435438402E-19"
+        iyy="0.0202864037193912"
+        iyz="0.00040941322385513"
+        izz="0.00044233020512423" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://canegazebo/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://canegazebo/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="backlink">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 -5.55111512312578E-17 -0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.0182590475435467" />
+      <inertia
+        ixx="3.03386035340226E-06"
+        ixy="-5.62482816536059E-23"
+        ixz="-3.73885636873969E-22"
+        iyy="3.03386035340226E-06"
+        iyz="-6.35274710440725E-22"
+        izz="5.77600170639616E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://canegazebo/meshes/backlink.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://canegazebo/meshes/backlink.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="backjoint"
+    type="continuous">
+    <origin
+      xyz="-0.0015026 -0.095585 0.73425"
+      rpy="-0.7854 0 -0.020403" />
+    <parent
+      link="base_link" />
+    <child
+      link="backlink" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="frontlink">
+    <inertial>
+      <origin
+        xyz="0 4.33680868994202E-19 -0.00500000000000006"
+        rpy="0 0 0" />
+      <mass
+        value="0.0182590475435467" />
+      <inertia
+        ixx="3.03386035340226E-06"
+        ixy="-1.17159198891138E-22"
+        ixz="3.11019910319938E-22"
+        iyy="3.03386035340226E-06"
+        iyz="-2.23270659580623E-23"
+        izz="5.77600170639615E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://canegazebo/meshes/frontlink.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://canegazebo/meshes/frontlink.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="frontjoint"
+    type="continuous">
+    <origin
+      xyz="-0.0061341 -0.021827 0.80116"
+      rpy="-1.5708 0 1.5504" />
+    <parent
+      link="base_link" />
+    <child
+      link="frontlink" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+</robot>
