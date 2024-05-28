@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/arham/catkin_ws/devel/.private/astar_search/setup.sh

@@ -1,0 +1,6 @@
+Symlinking /home/arham/catkin_ws/devel/share/astar_search/cmake/astar_searchConfig.cmake
+Symlinking /home/arham/catkin_ws/devel/share/astar_search/cmake/astar_searchConfig-version.cmake
+Symlinking /home/arham/catkin_ws/devel/lib/pkgconfig/astar_search.pc
+Symlinking /home/arham/catkin_ws/devel/lib/astar_search/cmake.lock
+Symlinking /home/arham/catkin_ws/devel/lib/astar_search/test
+Symlinking /home/arham/catkin_ws/devel/lib/python3/dist-packages/astar_search/__init__.py
