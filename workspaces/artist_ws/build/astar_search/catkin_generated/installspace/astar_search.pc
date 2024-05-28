@@ -1,8 +1,0 @@
-prefix=/home/arham/catkin_ws/install
-
-Name: astar_search
-Description: Description of astar_search
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp rospy std_msgs turtlebot3_gazebo geometry_msgs
