@@ -207,5 +207,10 @@ rostopic echo /map or /mapupdates</code></pre>
         <li><code>roslaunch astar_search algorithm_visualization.launch</code></li>
     </ol>
     <p>After running, the results are given as:</p>
+    
+
+https://github.com/arhmAli/FYP/assets/110810048/f0c0901a-4646-4061-bc81-3a3cd7dafb7b
+
+
 </body>
 </html>
