@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 <body>
+    <h3><a href="https://github.com/arhmAli/Lidar_Workspace">Link</a> to lidar workspaces which contains slam algorithms </h3>
     <h1>Setting Up Laptop to Send Data to the Microcontroller</h1>
     <h2>Step 1: Create the boot.py File</h2>
     <p>Create the <code>boot.py</code> file in MicroPython, which essentially connects to the Wi-Fi network.</p>
